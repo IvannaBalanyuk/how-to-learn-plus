@@ -1,0 +1,8 @@
+.two-columns__brief {
+  display: inline-block;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  text-align: left;
+  color: #2f80ed;
+}

@@ -1,0 +1,6 @@
+.digits__container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
