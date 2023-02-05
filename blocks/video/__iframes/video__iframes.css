@@ -1,6 +1,7 @@
 .video__iframes {
   width: auto;
-  padding-top: 50px;
+  padding-top: 10px;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -8,4 +9,8 @@
   row-gap: 20px;
   position: relative;
   bottom: -40px;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }

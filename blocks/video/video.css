@@ -1,6 +1,7 @@
 .video {
   width: 80%;
   padding-top: 100px;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
