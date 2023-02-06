@@ -24,7 +24,8 @@
   </header>
 
   <main class="content">
-    <section class="description" id="content">
+    <!-- Всё поправила (надеюсь), на ус намотала. С атрибутами aria буду ещё разбираться, читать - важная тема. "Красиво=удобно" - согласна на все 100%. Спасибо за ревью!) -->
+    <section class="description" id="content" aria-label="Вводная статья">
       <article class="two-columns">
         <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
 
@@ -89,7 +90,7 @@
       </ul>
     </section>
 
-    <section class="oakley">
+    <section class="oakley" aria-label="Статья о цене и ценности">
       <article class="two-columns">
         <h2 class="two-columns__brief">История Барбары Оакли</h2>
 
@@ -164,9 +165,7 @@
 
         <h2 class="khan__title">Весь мир — школа</h2>
 
-        <blockquote class="khan__quote">
-          <p class="khan__quote-text">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
-        </blockquote>
+        <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
 
         <h3 class="khan__quote-author">Джордж Лукас</h3>
 
@@ -179,66 +178,62 @@
       </div>
     </section>
 
-    <!-- Добрый день! Спасибо Вам за ревью! Очень информативно, структурировано, с явной пользой для процесса обучения)... По замечанию о наличии лишней обёртки в отношении секции kaufman позвольте прокомментировать почему считаю, что в данной секции она действительно необходима. Аналогичная обёртка присутствует в брифе в секции techniques на листе "Позиционирование, отступы и расстояния", хотя никак не упомянута на листе "Именование секций". Изначально я её сверстала, но позже убрала, посчитав артефактом. А после обнаружила, что без этой доп.обёртки с шириною в 80% от content карточки не перескакивают при сужении окна, т.к. у page установлена минимальная ширина 1100px. Т.е. для переноса карточек, видео, ячеек таблиц между их непосредственным родителем и page должна быть обёртка со значением ширины в %. На примере techniques: ширина cards - 920px, 80% от 1100px - 880px. Эта разница даёт cards немного ужаться, адаптироваться при сужении окна. В случае с теми секциями, где белый фон, можно просто сделать ширину самой секции 80% и доп.обёртка действительно лишняя. А там, где черный фон, так не получается, т.к. черный фон по брифу идёт на всю ширину content. Для унификации решила добавить доп.обёртку везде, а не только в тёмной секции, что, видимо, было лишним) Сейчас убрала её в белых блоках, изменила ширину самих секций на 80%. Тут прошу позволить оставить доп.обёртку, т.к. без неё получится странно - при сужении окна до значений меньше примерно 1160px все секции будут в некоторой степени адаптироваться, а темная останется неизменной. Если это недопустимо, то прошу извинить за потраченное время) Ещё раз спасибо за ревью! -->
     <section class="kaufman">
-      <div class="kaufman__container">
-        <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
+      <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
 
-        <p class="section-subtitle section-subtitle_theme_dark">От Джоша Кауфмана</p>
+      <p class="section-subtitle section-subtitle_theme_dark">От Джоша Кауфмана</p>
 
-        <ul class="table table_theme_dark">
-          <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading table__heading_theme_dark">1</h3>
-            <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
-          </li>
+      <ul class="table table_theme_dark">
+        <li class="table__cell table__cell_theme_dark">
+          <h3 class="table__heading table__heading_theme_dark">1</h3>
+          <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
+        </li>
 
-          <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading table__heading_theme_dark">2</h3>
-            <p class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
-          </li>
+        <li class="table__cell table__cell_theme_dark">
+          <h3 class="table__heading table__heading_theme_dark">2</h3>
+          <p class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
+        </li>
 
-          <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading table__heading_theme_dark">3</h3>
-            <p class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</p>
-          </li>
+        <li class="table__cell table__cell_theme_dark">
+          <h3 class="table__heading table__heading_theme_dark">3</h3>
+          <p class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</p>
+        </li>
 
-          <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading table__heading_theme_dark">4</h3>
-            <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
-          </li>
+        <li class="table__cell table__cell_theme_dark">
+          <h3 class="table__heading table__heading_theme_dark">4</h3>
+          <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
+        </li>
 
-          <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading table__heading_theme_dark">5</h3>
-            <p class="table__text table__text_theme_dark">Приготовьте всё необходимое для занятий.</p>
-          </li>
+        <li class="table__cell table__cell_theme_dark">
+          <h3 class="table__heading table__heading_theme_dark">5</h3>
+          <p class="table__text table__text_theme_dark">Приготовьте всё необходимое для занятий.</p>
+        </li>
 
-          <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading table__heading_theme_dark">6</h3>
-            <p class="table__text table__text_theme_dark">Устраните препятствия для занятий.</p>
-          </li>
+        <li class="table__cell table__cell_theme_dark">
+          <h3 class="table__heading table__heading_theme_dark">6</h3>
+          <p class="table__text table__text_theme_dark">Устраните препятствия для занятий.</p>
+        </li>
 
-          <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading table__heading_theme_dark">7</h3>
-            <p class="table__text table__text_theme_dark">Выделите специальное время для занятий.</p>
-          </li>
+        <li class="table__cell table__cell_theme_dark">
+          <h3 class="table__heading table__heading_theme_dark">7</h3>
+          <p class="table__text table__text_theme_dark">Выделите специальное время для занятий.</p>
+        </li>
 
-          <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading table__heading_theme_dark">8</h3>
-            <p class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</p>
-          </li>
+        <li class="table__cell table__cell_theme_dark">
+          <h3 class="table__heading table__heading_theme_dark">8</h3>
+          <p class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</p>
+        </li>
 
-          <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading table__heading_theme_dark">9</h3>
-            <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
-          </li>
+        <li class="table__cell table__cell_theme_dark">
+          <h3 class="table__heading table__heading_theme_dark">9</h3>
+          <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
+        </li>
 
-          <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading table__heading_theme_dark">10</h3>
-            <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
-          </li>
-        </ul>
-      </div>
-
+        <li class="table__cell table__cell_theme_dark">
+          <h3 class="table__heading table__heading_theme_dark">10</h3>
+          <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
+        </li>
+      </ul>
       <div class="kaufman__triangle rotation"></div>
     </section>
 
@@ -248,17 +243,17 @@
       <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
 
       <ul class="resources__logo-zone">
-        <li class="resources__link">
-          <a href="#"><img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Логотип Arzamas"></a>
+        <li class="resources__item">
+          <a class="resources__link" href="#"><img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Логотип Arzamas"></a>
         </li>
-        <li class="resources__link">
-          <a href="#"><img class="resources__logo" src="./images/logo/resources-n1.svg" alt="Логотип N+1"></a>
+        <li class="resources__item">
+          <a class="resources__link" href="#"><img class="resources__logo" src="./images/logo/resources-n1.svg" alt="Логотип N+1"></a>
         </li>
-        <li class="resources__link">
-          <a href="#"><img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="Логотип Strelka"></a>
+        <li class="resources__item">
+          <a class="resources__link" href="#"><img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="Логотип Strelka"></a>
         </li>
-        <li class="resources__link">
-          <a href="#"><img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Логотип Полка"></a>
+        <li class="resources__item">
+          <a class="resources__link" href="#"><img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Логотип Полка"></a>
         </li>
       </ul>
     </section>

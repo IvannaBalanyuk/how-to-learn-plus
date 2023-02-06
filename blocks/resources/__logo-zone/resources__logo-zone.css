@@ -4,8 +4,6 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 40px;
   list-style-type: none;
   padding-inline-start: 0;
   margin-block-start: 0;
