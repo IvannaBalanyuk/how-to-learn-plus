@@ -14,8 +14,10 @@
 ---
 
 ## О сайте:
-
 **"Научиться учиться"** - одностраничный сайт о современных и эффективных подходах к обучению.
 
-## Проект на GitHub Pages:
-![https://ivannabalanyuk.github.io/how-to-learn-plus/](https://ivannabalanyuk.github.io/how-to-learn-plus/)  
+## Ссылка на прототип в Figma:
+[https://www.figma.com/proto/4Xj9xAwUzLNv6W7AEVcMnx/long-brief?page-id=0%3A1&node-id=11900-243&viewport=241%2C48%2C0.09&scaling=min-zoom](https://www.figma.com/proto/4Xj9xAwUzLNv6W7AEVcMnx/long-brief?page-id=0%3A1&node-id=11900-243&viewport=241%2C48%2C0.09&scaling=min-zoom)  
+
+## Проект можно посмотреть на GitHub Pages:
+[https://ivannabalanyuk.github.io/how-to-learn-plus/](https://ivannabalanyuk.github.io/how-to-learn-plus/)  
